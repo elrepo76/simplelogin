@@ -2,6 +2,7 @@ simplelogin
 ===========
 
 A simple program written in .NET 6 and ReactJS.
+Because of React, you will need Node.js installed.
 It is for demo purposes.
 simplelogin includes 2 solutions:
 
@@ -21,8 +22,19 @@ To run the application:
 
 4. In Visual Studio open a Developer Powershell terminal. 
    cd to folder ..\login-frontend\.
+   Type: npm install react-scripts
+   this command creates the npm_modules folder needed for this project
+   
    Type:  npm start
    This is the Login form for simplelogin.
+   
+   NOTE: I am running Node.js v19.4.0
+   Because of that I had to edit package.json lines 16, 17.
+   If 'npm start' runs with issues revert these changes to:
+   
+   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
 		
 5. Test with valid users:
 Username: rocio   Password: 12345
